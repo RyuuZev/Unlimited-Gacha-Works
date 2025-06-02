@@ -1,0 +1,433 @@
+/* Universal Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d1a; /* Dark background */
+    color: #e0e0f0; /* Light text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pastikan body mengambil tinggi penuh viewport */
+    overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-grow: 1; /* Konten utama akan mengambil ruang sisa */
+}
+
+h1, h2 {
+    color: #00ff99; /* Bright green for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a1a2e; /* Darker background for header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #6a0572; /* Purple border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 0 0 8px rgba(0, 255, 153, 0.6); /* Glow effect */
+}
+
+header p {
+    font-size: 1.1em;
+    color: #b0b0d0;
+}
+
+/* Section Styling */
+.pull-section,
+.result-section,
+.inventory-section {
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+/* Button Styles */
+button {
+    background-color: #8e44ad; /* Purple */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #6a0572; /* Darker purple */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.pull-section {
+    text-align: center;
+}
+
+.clear-button {
+    background-color: #e74c3c; /* Red for clear buttons */
+    margin-top: 15px;
+    display: block; /* Agar tombol berada di baris sendiri */
+    width: fit-content; /* Sesuaikan lebar dengan konten */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear-button:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+/* Pull Results & Inventory Grid */
+.pull-grid,
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Desktop default */
+    gap: 20px;
+    padding: 20px;
+    background-color: #0f0f1d; /* Slightly darker than section background */
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Inner shadow */
+    min-height: 250px;
+    max-height: 600px; /* Batasi tinggi maksimum */
+    overflow-y: auto; /* Aktifkan scroll jika konten melebihi max-height */
+    scrollbar-width: thin; /* Untuk Firefox */
+    scrollbar-color: #6a0572 #1a1a2e; /* Untuk Firefox */
+}
+
+/* Scrollbar styling for Webkit browsers (Chrome, Safari) */
+.pull-grid::-webkit-scrollbar,
+.inventory-grid::-webkit-scrollbar {
+    width: 12px;
+}
+
+.pull-grid::-webkit-scrollbar-track,
+.inventory-grid::-webkit-scrollbar-track {
+    background: #1a1a2e; /* Track color */
+    border-radius: 6px;
+}
+
+.pull-grid::-webkit-scrollbar-thumb,
+.inventory-grid::-webkit-scrollbar-thumb {
+    background: #6a0572; /* Thumb color */
+    border-radius: 6px;
+    border: 3px solid #1a1a2e; /* Padding around thumb */
+}
+
+.pull-grid::-webkit-scrollbar-thumb:hover,
+.inventory-grid::-webkit-scrollbar-thumb:hover {
+    background: #8e44ad; /* Thumb hover color */
+}
+
+/* Initial message in results/inventory */
+.initial-message {
+    text-align: center;
+    color: #b0b0d0;
+    grid-column: 1 / -1; /* Membuat pesan berada di tengah grid */
+    padding: 50px 0;
+    font-style: italic;
+}
+
+/* Character Card Styles */
+.character-card {
+    background-color: #2a2a4a;
+    border: 2px solid #4a4a8a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Menggunakan flexbox untuk layout di dalam card */
+    flex-direction: column;
+    justify-content: space-between; /* Menata konten secara vertikal */
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff99; /* Kilauan hijau saat hover */
+}
+
+.character-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.character-card h3 {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 5px;
+    word-wrap: break-word; /* Memastikan nama karakter tidak meluber */
+}
+
+.character-card p {
+    font-size: 0.9em;
+    color: #b0b0d0;
+    margin-bottom: 0; /* Hapus margin bawah default */
+}
+
+/* New character indicator */
+.character-card.new::after {
+    content: "NEW!";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #00ff99; /* Hijau cerah */
+    color: #1a1a2e;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0f0f1d;
+    color: #b0b0d0;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #6a0572;
+    margin-top: auto; /* Mendorong footer ke bagian bawah */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #8e44ad;
+    text-decoration: underline;
+}
+
+/* --- MEDIA QUERIES UNTUK RESPONSIVITAS --- */
+
+/* Untuk layar tablet dan desktop kecil (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px; /* Kurangi padding container utama */
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .pull-section,
+    .result-section,
+    .inventory-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    /* Sesuaikan lebar kolom grid untuk layar tablet ke bawah */
+    .pull-grid,
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Kolom lebih kecil untuk tablet */
+        gap: 15px; /* Kurangi jarak antar kartu */
+        padding: 15px;
+    }
+
+    .character-card {
+        padding: 8px; /* Kurangi padding card */
+        border-radius: 8px;
+    }
+
+    .character-card h3 {
+        font-size: 1em; /* Kecilkan ukuran font judul */
+    }
+
+    .character-card p {
+        font-size: 0.8em; /* Kecilkan ukuran font rarity */
+    }
+
+    .character-card.new::after {
+        padding: 2px 6px;
+        font-size: 0.75em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+    footer p {
+        font-size: 0.85em;
+    }
+}
+
+/* Untuk layar ponsel kecil (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px; /* Padding lebih kecil lagi */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .pull-section,
+    .result-section,
+    .inventory-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+        display: block; /* Tombol pull menjadi blok agar berada di baris sendiri */
+        margin: 5px auto; /* Pusatkan tombol pull */
+        width: calc(100% - 20px); /* Lebar penuh dengan sedikit padding */
+        max-width: 200px; /* Batasi lebar maksimal agar tidak terlalu besar di layar sempit */
+    }
+    
+    .pull-section {
+        display: flex;
+        flex-direction: column; /* Tombol pull diatur vertikal */
+        align-items: center; /* Pusatkan tombol */
+    }
+
+    /* Sesuaikan lebar kolom grid untuk layar HP kecil */
+    .pull-grid,
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Lebih kecil lagi untuk HP */
+        gap: 8px; /* Jarak antar kartu lebih kecil lagi */
+        padding: 8px;
+        min-height: 200px;
+    }
+
+    .character-card {
+        padding: 5px; /* Padding card sangat kecil */
+        border-radius: 6px;
+    }
+
+    .character-card img {
+        margin-bottom: 5px;
+    }
+
+    .character-card h3 {
+        font-size: 0.85em; /* Kecilkan font judul */
+        line-height: 1.2;
+    }
+
+    .character-card p {
+        font-size: 0.7em; /* Kecilkan font rarity */
+    }
+
+    .character-card.new::after {
+        padding: 2px 4px;
+        font-size: 0.65em;
+        top: 3px;
+        right: 3px;
+    }
+
+    .initial-message {
+        font-size: 0.9em;
+        padding: 30px 0;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Final adjustments for very small screens (e.g., iPhone 5/SE) */
+@media (max-width: 360px) {
+    .pull-grid,
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Lebih kecil lagi */
+        gap: 5px;
+        padding: 5px;
+    }
+    .character-card h3 {
+        font-size: 0.8em;
+    }
+    .character-card p {
+        font-size: 0.65em;
+    }
+}
+
+.pull-icon {
+    width: 20px; /* Atur lebar ikon sesuai keinginan */
+    height: 20px; /* Atur tinggi ikon sesuai keinginan */
+    vertical-align: middle; /* Sejajarkan ikon dengan teks secara vertikal */
+    margin-right: 5px; /* Beri sedikit jarak antara ikon dan teks */
+    image-rendering: optimizeQuality; /* Memastikan gambar terlihat baik */
+}
+
+/* Penyesuaian untuk tombol pull itu sendiri */
+.pull-section button {
+    display: flex; /* Menggunakan flexbox untuk penempatan ikon dan teks */
+    align-items: center; /* Pusatkan item secara vertikal */
+    justify-content: center; /* Pusatkan item secara horizontal */
+    padding: 10px 20px; /* Sesuaikan padding agar tombol tidak terlalu besar/kecil */
+    font-size: 1.1em; /* Sesuaikan ukuran font teks tombol */
+}
+
+.character-card.rarity-5 {
+    border: 2px solid #FFD700; /* Warna emas */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6), /* Efek glow emas */
+                0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.character-card.rarity-5:hover {
+    border-color: #FFEA00; /* Warna emas sedikit lebih terang saat hover */
+    box-shadow: 0 0 20px rgba(255, 234, 0, 0.8), /* Efek glow lebih kuat saat hover */
+                0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Opsional: Jika kamu ingin mengubah warna rarity text di dalam card */
+.character-card.rarity-5 .rarity {
+    color: #FFD700; /* Warna emas untuk teks rarity */
+    font-weight: bold;
+}
