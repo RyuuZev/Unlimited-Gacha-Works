@@ -535,11 +535,16 @@ document.addEventListener('DOMContentLoaded', () => {
             .from(characterInventory.keys())
             .map(charId => {
                 const char = HSR_CHARACTERS.find(c => c.id === charId);
+                if (!char) {
+                    console.warn(`Karakter dengan ID ${charId} ditemukan di inventaris tetapi tidak ada di daftar HSR_CHARACTERS. Mengabaikan.`);
+                    return null;
+                }
                 return {
                     ...char,
                     count: characterInventory.get(charId)
                 };
             })
+            .filter(item => item !== null)
             .sort((a, b) => {
                 if (b.rarity !== a.rarity) {
                     return b.rarity - a.rarity;
