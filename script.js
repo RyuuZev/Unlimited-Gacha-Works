@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const RARITY_5_STAR_RATE = 0.036; // 4.6%
+    const RARITY_5_STAR_RATE = 0.026; // 4.6%
     const RARITY_4_STAR_RATE = 0.391; // 5.1%
 
     const SOFT_PITY_5_STAR_THRESHOLD = 74;
