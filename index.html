@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HSR Unlimited Gacha Simulator</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>UNLIMITED WAIFU WORKS</h1>
+            <p>Ngekarbit Tanpa Batas!</p>
+        </header>
+
+        <main class="container">
+            <section class="pull-section">
+                <button id="pullButton">
+                    <img src="images/special_pass_icon.webp" alt="Special Pass" class="pull-icon">
+                    Wish x1
+                </button>
+                <button id="pull10Button">
+                    <img src="images/special_pass_icon.webp" alt="Special Pass" class="pull-icon">
+                    Wish x10
+                </button>
+            </section>
+
+            <section class="result-section">
+                <h2>Hasil Wish Anda:</h2>
+                <div id="pullResults" class="pull-grid">
+                    <p class="initial-message">Tekan tombol 'Wish' untuk memulai!</p>
+                </div>
+                <button id="clearResultsButton" class="clear-button">Bersihkan Hasil Wish</button>
+            </section>
+
+            <section class="inventory-section">
+                <h2>Koleksi Karakter Anda:</h2>
+                <div id="characterInventory" class="inventory-grid">
+                    <p class="initial-message">Belum ada karakter dalam koleksi Anda. Pull sekarang!</p>
+                </div>
+                <button id="clearInventoryButton" class="clear-button">Bersihkan Koleksi</button>
+                <!-- <div id="lightConeInventory" class="inventory-section">
+                    <h2>Koleksi Lightcone Anda</h2>
+                    <p class="initial-message">Belum ada Light Cone dalam koleksi Anda. Pull sekarang!</p>
+                </div> -->
+                <div class="gacha-stats">
+                    <p>Total Pull:
+                        <span id="totalPullsDisplay">0</span></p>
+                    <p>Pity:
+                        <span id="pityCountDisplay">0</span></p>
+                    <p>Pity Sebelumnya:
+                        <span id="previousPityDisplay">0</span></p>
+                </div>
+                <button id="resetStatsButton">Reset Stats</button>
+            </section>
+        </main>
+
+        <audio id="backgroundMusic" muted="muted">
+            <source src="audio/hsr_bgm.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+
+        <footer>
+            <p>&copy; 2025 UNLIMITED GACHA KARBIT. Dibuat oleh seorang karbit untuk karbit.</p>
+            <p>Disclaimer: Ini hanyalah simulasi. Waifu-waifu yang diambil di sini berasal dari game: HSR, Genshin Impact, Wuthering Waves</p>
+            <p>GitHub:
+                <a href="https://github.com/RyuuZev/Unlimited-Gacha-Works" target="_blank">Honkai Star Rail Gacha Simulator</a>
+            </p>
+        </footer>
+
+        <audio id="clickSFX">
+            <source src="audio/button_click_sfx.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+
+        <script src="script.js"></script>
+    </body>
+</html>
