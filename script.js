@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const RARITY_5_STAR_RATE = 0.010; // 4.6%
-    const RARITY_4_STAR_RATE = 0.391; // 5.1%
+    const RARITY_5_STAR_RATE = 0.016; // 4.6%
+    const RARITY_4_STAR_RATE = 0.256; // 5.1%
 
-    const SOFT_PITY_5_STAR_THRESHOLD = 74;
+    const SOFT_PITY_5_STAR_THRESHOLD = 75;
     const HARD_PITY_5_STAR_THRESHOLD = 90;
     const HARD_PITY_4_STAR_THRESHOLD = 10;
 
@@ -220,6 +220,170 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
 
+        // Genshin impact
+
+        {
+            id: 'arlecchino',
+            name: 'Arlecchino',
+            rarity: 5,
+            imageUrl: 'images/characters/arlecchino.webp'
+        }, {
+            id: 'ayaka',
+            name: 'Ayaka',
+            rarity: 5,
+            imageUrl: 'images/characters/ayaka.webp'
+        }, {
+            id: 'chasca',
+            name: 'Chasca',
+            rarity: 5,
+            imageUrl: 'images/characters/chasca.webp'
+        }, {
+            id: 'chiori',
+            name: 'Chiori',
+            rarity: 5,
+            imageUrl: 'images/characters/chiori.webp'
+        }, {
+            id: 'citlali',
+            name: 'Citlali',
+            rarity: 5,
+            imageUrl: 'images/characters/citlali.webp'
+        }, {
+            id: 'clorinde',
+            name: 'Clorinde',
+            rarity: 5,
+            imageUrl: 'images/characters/clorinde.webp'
+        }, {
+            id: 'dehya',
+            name: 'Dehya',
+            rarity: 5,
+            imageUrl: 'images/characters/dehya.webp'
+        }, {
+            id: 'emilie',
+            name: 'Emilie',
+            rarity: 5,
+            imageUrl: 'images/characters/emilie.webp'
+        }, {
+            id: 'escoffier',
+            name: 'Escoffier',
+            rarity: 5,
+            imageUrl: 'images/characters/escoffier.webp'
+        }, {
+            id: 'eula',
+            name: 'Eula',
+            rarity: 5,
+            imageUrl: 'images/characters/eula.webp'
+        }, {
+            id: 'Furina5',
+            name: 'Furina',
+            rarity: 5,
+            imageUrl: 'images/characters/furina5.webp'
+        }, {
+            id: 'ganyu',
+            name: 'Ganyu',
+            rarity: 5,
+            imageUrl: 'images/characters/ganyu.webp'
+        }, {
+            id: 'jean',
+            name: 'Jean',
+            rarity: 5,
+            imageUrl: 'images/characters/jean.webp'
+        }, {
+            id: 'hutao',
+            name: 'Hu Tao',
+            rarity: 5,
+            imageUrl: 'images/characters/hutao.webp'
+        }, {
+            id: 'keqing',
+            name: 'Keqing',
+            rarity: 5,
+            imageUrl: 'images/characters/keqing.webp'
+        }, {
+            id: 'kokomi',
+            name: 'Kokomi',
+            rarity: 5,
+            imageUrl: 'images/characters/kokomi.webp'
+        }, {
+            id: 'mavuika',
+            name: 'Mavuika',
+            rarity: 5,
+            imageUrl: 'images/characters/mavuika.webp'
+        }, {
+            id: 'mizuki',
+            name: 'Mizuki',
+            rarity: 5,
+            imageUrl: 'images/characters/mizuki.webp'
+        }, {
+            id: 'mona',
+            name: 'Mona',
+            rarity: 5,
+            imageUrl: 'images/characters/mona.webp'
+        }, {
+            id: 'mualani',
+            name: 'Mualani',
+            rarity: 5,
+            imageUrl: 'images/characters/mualani.webp'
+        }, {
+            id: 'nahida',
+            name: 'Nahida',
+            rarity: 5,
+            imageUrl: 'images/characters/nahida.webp'
+        }, {
+            id: 'navia',
+            name: 'Navia',
+            rarity: 5,
+            imageUrl: 'images/characters/navia.webp'
+        }, {
+            id: 'nilou',
+            name: 'Nilou',
+            rarity: 5,
+            imageUrl: 'images/characters/nilou.webp'
+        },  {
+            id: 'qiqi',
+            name: 'Qiqi',
+            rarity: 5,
+            imageUrl: 'images/characters/qiqi.webp'
+        }, {
+            id: 'raiden',
+            name: 'Raiden',
+            rarity: 5, 
+            imageUrl: 'images/characters/raiden.webp'
+        }, {
+            id: 'shenhe',
+            name: 'Shenhe',
+            rarity: 5, 
+            imageUrl: 'images/characters/shenhe.webp'
+        },  {
+            id: 'varesa',
+            name: 'Varesa',
+            rarity: 5,
+            imageUrl: 'images/characters/varesa.webp'
+        }, {
+            id: 'xianyun',
+            name: 'Xianyun',
+            rarity: 5,
+            imageUrl: 'images/characters/xianyun.webp'
+        }, {
+            id: 'xilonen',
+            name: 'Xilonen',
+            rarity: 5,
+            imageUrl: 'images/characters/xilonen.webp'
+        }, {
+            id: 'yae_miko',
+            name: 'Yae Miko',
+            rarity: 5,
+            imageUrl: 'images/characters/yae_miko.webp'
+        }, {
+            id: 'yelan',
+            name: 'Yelan',
+            rarity: 5,
+            imageUrl: 'images/characters/yelan.webp'
+        }, {
+            id: 'yoimiya',
+            name: 'Yoimiya',
+            rarity: 5,
+            imageUrl: 'images/characters/yoimiya.webp'
+        },
+
 
         
         // --- 4-STAR CHARACTERS ---
@@ -351,6 +515,30 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Youhu',
             rarity: 4,
             imageUrl: 'images/characters/youhu.webp'
+        },
+        
+        // Genshin Impat
+
+         {
+            id: 'faruzan',
+            name: 'Faruzan',
+            rarity: 4,
+            imageUrl: 'https://upload-os-bbs.hoyolab.com/upload/2023/10/16/146697574/fe6389f3ec94c53f4950c2331994c273_1619437479216865355.jpg'
+        },  {
+            id: 'fischl',
+            name: 'fischl',
+            rarity: 4,
+            imageUrl: 'https://i.pinimg.com/736x/ff/d5/57/ffd557b6725393e66540f753ac000d2c.jpg'
+        },  {
+            id: 'lisa',
+            name: 'Lisa',
+            rarity: 4,
+            imageUrl: 'https://i.pinimg.com/564x/3a/65/d5/3a65d51a147105c30a33e6946c730cc5.jpg'
+        },  {
+            id: 'ningguang',
+            name: 'Ningguang',
+            rarity: 4,
+            imageUrl: 'https://static.wikia.nocookie.net/gensin-impact/images/e/e0/Ningguang_Icon.png/revision/latest?cb=20220210040239'
         }, 
         
 
@@ -415,6 +603,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalPullsDisplay = document.getElementById('totalPullsDisplay');
     const pityCountDisplay = document.getElementById('pityCountDisplay');
     const previousPityDisplay = document.getElementById('previousPityDisplay');
+    const total5StarDisplay = document.getElementById('total5StarDisplay'); 
+    const total4StarDisplay = document.getElementById('total4StarDisplay');
 
     const clickSFX = document.getElementById('clickSFX');
     const backgroundMusic = document.getElementById('backgroundMusic');
@@ -425,24 +615,43 @@ document.addEventListener('DOMContentLoaded', () => {
     let pityCount = parseInt(localStorage.getItem('pityCount')) || 0;
     let pity4StarCount = parseInt(localStorage.getItem('pity4StarCount')) || 0;
     let previousPity = parseInt(localStorage.getItem('previousPity')) || 0;
+    let total5StarCharacters = parseInt(localStorage.getItem('total5StarCharacters')) || 0;
+    let total4StarCharacters = parseInt(localStorage.getItem('total4StarCharacters')) || 0;
 
     const characterInventory = new Map(
         JSON.parse(localStorage.getItem('hsrCharacterInventory')) || []
     );
+    
 
     function saveStats() {
         localStorage.setItem('totalPulls', totalPulls);
         localStorage.setItem('pityCount', pityCount);
         localStorage.setItem('pity4StarCount', pity4StarCount);
         localStorage.setItem('previousPity', previousPity);
+        localStorage.setItem('total5StarCharacters', total5StarCharacters); 
+        localStorage.setItem('total4StarCharacters', total4StarCharacters);
     }
 
 
-    function updatePityDisplay() {
+    function updateDisplay() {
         totalPullsDisplay.textContent = totalPulls;
-        
-        pityCountDisplay.textContent = pityCount + 0;
+        pityCountDisplay.textContent = pityCount;
         previousPityDisplay.textContent = previousPity;
+        total5StarDisplay.textContent = total5StarCharacters;
+        total4StarDisplay.textContent = total4StarCharacters;
+
+    
+        const inventoryGrid = document.getElementById('characterInventory');
+    if (characterInventory.size === 0) {
+        if (!inventoryGrid.querySelector('.initial-message')) {
+            inventoryGrid.innerHTML = '<p class="initial-message">Belum ada karakter dalam koleksi Anda. Pull sekarang!</p>';
+        }
+    } else {
+        const initialMessage = inventoryGrid.querySelector('.initial-message');
+        if (initialMessage) {
+            initialMessage.remove();
+        }
+    }
 
     }
 
@@ -466,9 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return CHARACTERS_4_STAR[Math.floor(Math.random() * CHARACTERS_4_STAR.length)];
         }
 
-
         let current5StarRate = RARITY_5_STAR_RATE; 
-
 
         if (pityCount >= SOFT_PITY_5_STAR_THRESHOLD) {
             
@@ -478,7 +685,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const rand = Math.random();
-
 
         if (rand < current5StarRate) {
             return CHARACTERS_5_STAR[Math.floor(Math.random() * CHARACTERS_5_STAR.length)];
@@ -531,7 +737,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const sortedCharacters = Array
+        const validCharactersInInventory = Array
             .from(characterInventory.keys())
             .map(charId => {
                 const char = HSR_CHARACTERS.find(c => c.id === charId);
@@ -545,14 +751,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             })
             .filter(item => item !== null)
-            .sort((a, b) => {
-                if (b.rarity !== a.rarity) {
-                    return b.rarity - a.rarity;
-                }
-                return a
-                    .name
-                    .localeCompare(b.name);
-            });
+            const characters5Star = validCharactersInInventory.filter(char => char.rarity === 5);
+            const characters4Star = validCharactersInInventory.filter(char => char.rarity === 4);
+
+            const customSort = (a, b) => {
+            if (b.count !== a.count) {
+                return b.count - a.count;
+            }
+            return a.name.localeCompare(b.name);
+        };
+
+        characters5Star.sort(customSort);
+        characters4Star.sort(customSort);
+
+        const sortedCharacters = [...characters5Star, ...characters4Star];
 
         sortedCharacters.forEach(item => {
             const card = createCharacterCard(item);
@@ -585,11 +797,13 @@ document.addEventListener('DOMContentLoaded', () => {
             pulledCharacters.push(character);
 
             if (character.rarity === 5) {
+                total5StarCharacters++
                 previousPity = pityCount;
                 pityCount = 0; 
                 pity4StarCount = 0; 
                 console.log("Got 5-star! Pity reset.");
             } else if (character.rarity === 4) {
+                total4StarCharacters++
                 pity4StarCount = 0;
                 console.log("Got 4-star! 4-star pity reset.");
             }
@@ -607,7 +821,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             await new Promise(resolve => setTimeout(resolve, 300));
         }
-        updatePityDisplay();
+        updateDisplay();
         saveStats();
     }
     
@@ -626,7 +840,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
     function handleFirstInteraction() {
         if (!hasUserInteracted) {
             backgroundMusic.muted = false;
@@ -634,7 +847,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hasUserInteracted = true;
         }
     }
-
 
     pullButton.addEventListener('click', () => {
         handleFirstInteraction();
@@ -679,16 +891,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 totalPulls = 0;
                 pityCount = 0;
                 pity4StarCount = 0;
+                total4StarCharacters = 0;
+                total5StarCharacters = 0;
                 saveStats();
-                updatePityDisplay();
+                updateDisplay();
                 alert('Statistik Pull dan Pity berhasil direset!');
             }
         });
     }
-
     
+    updateDisplay();
     renderCharacterInventory();
-    updatePityDisplay();
     saveStats();
 
     if (backgroundMusic) {
