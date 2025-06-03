@@ -51,7 +51,7 @@ header p {
 }
 
 /* Section Styling */
-.pull-section,
+pull-section,
 .result-section,
 .inventory-section {
     background-color: #1a1a2e;
@@ -74,6 +74,7 @@ button {
     transition: background-image 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5); /* Glow abu-abu samar */
     margin: 5px;
+    margin-bottom: 10px;
     background-size: 200% auto;
     animation: gradientShiftButton 2s linear infinite alternate;
 }
