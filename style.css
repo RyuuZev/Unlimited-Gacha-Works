@@ -64,28 +64,36 @@ header p {
 
 /* Button Styles */
 button {
-    background-color: #8e44ad; /* Purple */
+    background-image: linear-gradient(to right, #00BFFF, #8A2BE2) ; /* Gradient abu-abu gelap */
     color: #fff;
     border: none;
     padding: 15px 25px;
     border-radius: 5px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: background-image 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.5); /* Glow abu-abu samar */
     margin: 5px;
+    background-size: 200% auto;
+    animation: gradientShiftButton 2s linear infinite alternate;
+}
+
+@keyframes gradientShiftButton {
+    to { background-position: right center; }
 }
 
 button:hover {
-    background-color: #6a0572; /* Darker purple */
+    background-image: linear-gradient(to right, #00BFFF, #8A2BE2) ; /* Gradient terbalik saat hover */
+    background-position: right center;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.7), 0 0 20px rgba(0, 191, 255, 0.7); /* Glow lebih kuat */
 }
 
 button:active {
     transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.7); /* Glow lebih redup saat ditekan */
 }
+
 
 .pull-section {
     text-align: center;
