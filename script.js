@@ -515,7 +515,12 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Youhu',
             rarity: 4,
             imageUrl: 'images/characters/youhu.webp'
-        },
+        }, {
+            id: 'carte',
+            name: 'Cartethyia',
+            rarity: 4,
+            imageUrl: 'https://scontent.fbdj1-1.fna.fbcdn.net/v/t39.30808-6/493603308_1080413374108385_5344725688777020195_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFTfuLtoAffg_bvF_3HOnGUaVVYf02Ap8xpVVh_TYCnzJxW00VDFJW8chbEzwdS-7gcnUDiSr_S1q6PAWX-fcp7&_nc_ohc=QTGq2A0mWhMQ7kNvwGdydKz&_nc_oc=AdlDGrUSOF-inNYUrd3FBquesUkckgSVd0KiuqJ-ho0LHCsZDcYnoRz7KTYuOXRfAYQ&_nc_zt=23&_nc_ht=scontent.fbdj1-1.fna&_nc_gid=h4QkpCk1U5Tcsdos3TiMog&oh=00_Afd0s9s6NJm6bFhBPFm87TnROZnI2tUXyOUlQ1-pYAPRfw&oe=68F74458'
+        }, 
         
         // Genshin Impat
 
