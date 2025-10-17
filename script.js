@@ -217,6 +217,46 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Zhezhi',
             rarity: 5,
             imageUrl: 'images/characters/zhezhi.webp'
+        }, {
+            id: 'carte',
+            name: 'Cartethyia',
+            rarity: 5,
+            imageUrl: 'https://scontent.fbdj1-1.fna.fbcdn.net/v/t39.30808-6/493603308_1080413374108385_5344725688777020195_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFTfuLtoAffg_bvF_3HOnGUaVVYf02Ap8xpVVh_TYCnzJxW00VDFJW8chbEzwdS-7gcnUDiSr_S1q6PAWX-fcp7&_nc_ohc=QTGq2A0mWhMQ7kNvwGdydKz&_nc_oc=AdlDGrUSOF-inNYUrd3FBquesUkckgSVd0KiuqJ-ho0LHCsZDcYnoRz7KTYuOXRfAYQ&_nc_zt=23&_nc_ht=scontent.fbdj1-1.fna&_nc_gid=h4QkpCk1U5Tcsdos3TiMog&oh=00_Afd0s9s6NJm6bFhBPFm87TnROZnI2tUXyOUlQ1-pYAPRfw&oe=68F74458'
+        }, {
+            id: 'Fleur',
+            name: 'Fleurdelys',
+            rarity: 5,
+            imageUrl: 'https://i.pinimg.com/236x/b0/f0/40/b0f04006a973475ad41d7d679f0322d1.jpg'
+        }, {
+            id: 'carlotta',
+            name: 'Carlotta',
+            rarity: 5, 
+            imageUrl: 'https://i.pinimg.com/736x/b4/3e/d2/b43ed22401c6f493e0114aab497e2581.jpg'
+        }, {
+            id: 'augusta',
+            name: 'Augusta',
+            rarity: 5,
+            imageUrl: 'https://img.game8.co/4235648/07013a4de3552067737471a65129ca89.png/show'
+        }, {
+            id: 'iuno',
+            name: 'Iuno',
+            rarity: 5,
+            imageUrl: 'https://hwres.ldmnq.com/rcmnq/gw/image/HNkkH6-1755000075397.webp'
+        }, {
+            id: 'phrolova',
+            name: 'Phrolova',
+            rarity: 5,
+            imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFaNwSYkgas5Efs_jAtS5bkpfWIxxvyilInWfRuQRwmiRVcsFAuWb49F--tpjT22x5zo&usqp=CAU'
+        }, {
+            id: 'galbrena',
+            name: 'Galbrena',
+            rarity: 5,
+            imageUrl: 'https://preview.redd.it/galbrena-devil-ever-bathed-in-purifying-flames-v0-uw2bbn9d3x3f1.jpeg?width=640&crop=smart&auto=webp&s=50c9942d908a562d9953f6844fadc3402a9545bb'
+        }, {
+            id: 'chisa',
+            name: 'Chisa',
+            rarity: 5,
+            imageUrl: 'https://i.pinimg.com/736x/49/c0/a2/49c0a2eaaa2e5c5784d2cf0d7df3f957.jpg'
         },
 
 
@@ -515,11 +555,6 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Youhu',
             rarity: 4,
             imageUrl: 'images/characters/youhu.webp'
-        }, {
-            id: 'carte',
-            name: 'Cartethyia',
-            rarity: 4,
-            imageUrl: 'https://scontent.fbdj1-1.fna.fbcdn.net/v/t39.30808-6/493603308_1080413374108385_5344725688777020195_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFTfuLtoAffg_bvF_3HOnGUaVVYf02Ap8xpVVh_TYCnzJxW00VDFJW8chbEzwdS-7gcnUDiSr_S1q6PAWX-fcp7&_nc_ohc=QTGq2A0mWhMQ7kNvwGdydKz&_nc_oc=AdlDGrUSOF-inNYUrd3FBquesUkckgSVd0KiuqJ-ho0LHCsZDcYnoRz7KTYuOXRfAYQ&_nc_zt=23&_nc_ht=scontent.fbdj1-1.fna&_nc_gid=h4QkpCk1U5Tcsdos3TiMog&oh=00_Afd0s9s6NJm6bFhBPFm87TnROZnI2tUXyOUlQ1-pYAPRfw&oe=68F74458'
         }, 
         
         // Genshin Impat
